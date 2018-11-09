@@ -15,6 +15,9 @@ server.get("/", (req, res) => {
 });
 
 /* ======= ACTION ROUTE ====== */
-server.use("/api/action/", action);
+server.use("/api/actions/", action);
+
+/* ======= PROJECT ROUTE ====== */
+server.use("/api/projects/", project);
 
 module.exports = server;
